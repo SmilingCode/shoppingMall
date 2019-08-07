@@ -1,0 +1,19 @@
+{
+  "name": "shoppingmall",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SmilingCode/shoppingMall.git"
+  },
+  "author": "John",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SmilingCode/shoppingMall/issues"
+  },
+  "homepage": "https://github.com/SmilingCode/shoppingMall#readme"
+}
