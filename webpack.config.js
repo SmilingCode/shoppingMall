@@ -63,7 +63,10 @@ module.exports = {
     },
     // webpack dev server
     devServer: {
-        port: 8086
+        port: 8087,
+        historyApiFallback: {
+            index: '/dist/index.html'
+        }
     },
     // specify files
     plugins: [
