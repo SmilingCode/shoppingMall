@@ -10,6 +10,14 @@ module.exports = {
         publicPath: '/dist/',
         filename: 'js/app.js'
     },
+    resolve: {
+        alias: {
+            page: path.resolve(__dirname, 'src/page'),
+            component: path.resolve(__dirname, 'src/component'),
+            util: path.resolve(__dirname, 'src/util'),
+            service: path.resolve(__dirname, 'src/service')
+        }
+    },
     module: {
         rules: [
             // react handler
@@ -66,6 +74,17 @@ module.exports = {
         port: 8087,
         historyApiFallback: {
             index: '/dist/index.html'
+        },
+        proxy: {
+            // key
+            '/manage': {
+                target: 'http://admintest.happymmall.com',
+                changeOrigin: true
+            },
+            '/user/logout.do': {
+                target: 'http://admintest.happymmall.com',
+                changeOrigin: true
+            }
         }
     },
     // specify files
