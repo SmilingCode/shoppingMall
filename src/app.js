@@ -11,6 +11,8 @@ import UserList from 'page/user/index.js';
 import ProductList from 'page/product/commodity/index.js';
 import ProductSave from 'page/product/commodity/save.js';
 import ProductDetail from 'page/product/commodity/detail.js';
+import CategoryList from 'page/product/category/index.js';
+import AddCategory from 'page/product/category/add.js';
 
 class App extends React.Component {
 
@@ -27,7 +29,9 @@ class App extends React.Component {
                             <Redirect exact from="/product" to="/product/index"/>
                             <Route path="/product/save/:pid?" component={ProductSave} />
                             <Route path="/product/detail/:pid" component={ProductDetail} />
-                            <Route path="/product-category" component={Home} />
+                            <Route path="/product-category/index/:categoryId?" component={CategoryList} />
+                            <Route path="/product-category/add" component={AddCategory} />
+                            <Redirect exact from="/product-category" to="/product-category/index" />
                             <Route path="/order" component={Home} />
                             <Route path="/user" component={UserList} />
                             <Route component={PageError} />

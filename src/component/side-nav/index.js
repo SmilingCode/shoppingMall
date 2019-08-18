@@ -25,7 +25,7 @@ class SideNav extends React.Component {
                                         <NavLink activeClassName="active-menu" to="/product">Commodities Management</NavLink>
                                     </li>
                                     <li>
-                                        <NavLink activeClassName="active-menu" to="/product-Categories">Categories Management</NavLink>
+                                        <NavLink activeClassName="active-menu" to="/product-category">Categories Management</NavLink>
                                     </li>
                                 </ul>
                             </li>

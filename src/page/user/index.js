@@ -6,7 +6,6 @@ const _mm = new Mutil();
 import User from 'service/user-service.js';
 const _user = new User();
 
-import { Link } from 'react-router-dom';
 import Pagination from 'rc-pagination';
 import 'rc-pagination/dist/rc-pagination.min.css';
 
