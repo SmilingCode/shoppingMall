@@ -13,6 +13,8 @@ import ProductSave from 'page/product/commodity/save.js';
 import ProductDetail from 'page/product/commodity/detail.js';
 import CategoryList from 'page/product/category/index.js';
 import AddCategory from 'page/product/category/add.js';
+import OrderList from 'page/order/index.js';
+import OrderDetail from 'page/order/detail.js';
 
 class App extends React.Component {
 
@@ -32,8 +34,11 @@ class App extends React.Component {
                             <Route path="/product-category/index/:categoryId?" component={CategoryList} />
                             <Route path="/product-category/add" component={AddCategory} />
                             <Redirect exact from="/product-category" to="/product-category/index" />
-                            <Route path="/order" component={Home} />
-                            <Route path="/user" component={UserList} />
+                            <Route path="/order/index" component={OrderList} />
+                            <Redirect exact from="/order" to="/order/index" />
+                            <Route path="/order/detail/:orderNumber" component={OrderDetail} />
+                            <Route path="/user/index" component={UserList} />
+                            <Redirect exact from="/user" to="/user/index" />
                             <Route component={PageError} />
                         </Switch>
                     </Layout>

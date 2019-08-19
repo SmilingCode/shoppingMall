@@ -37,7 +37,7 @@ class SideNav extends React.Component {
                                 </Link>
                                 <ul className="nav nav-second-level collapse in">
                                     <li>
-                                        <NavLink activeClassName="active-menu" to="/order">Order Management</NavLink>
+                                        <NavLink activeClassName="active-menu" to="/order/index">Order Management</NavLink>
                                     </li>
                                 </ul>
                             </li>
@@ -49,7 +49,7 @@ class SideNav extends React.Component {
                                 </Link>
                                 <ul className="nav nav-second-level collapse in">
                                     <li>
-                                        <NavLink activeClassName="active-menu" to="/user">User Management</NavLink>
+                                        <NavLink activeClassName="active-menu" to="/user/index">User Management</NavLink>
                                     </li>
                                 </ul>
                             </li>
