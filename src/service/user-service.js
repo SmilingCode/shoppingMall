@@ -6,7 +6,7 @@ class User {
     login(data) {
         return _mm.request({
             type: 'post',
-            url: '/manage/user/login.do',
+            url: 'http://admintest.happymmall.com/manage/user/login.do',
             data: data
         });
     }
@@ -36,14 +36,14 @@ class User {
     logOut() {
         return _mm.request({
             type: 'post',
-            url: '/user/logout.do'
+            url: 'http://admintest.happymmall.com/user/logout.do'
         })
     }
 
     getUserList(pageNum) {
         return _mm.request({
             type: 'post',
-            url: '/manage/user/list.do',
+            url: 'http://admintest.happymmall.com/manage/user/list.do',
             data: {
                 pageNum: pageNum
             }

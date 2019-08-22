@@ -6,7 +6,7 @@ class Product {
     getProduct(productId) {
         return _mm.request({
             type: 'post',
-            url: '/manage/product/detail.do',
+            url: 'http://admintest.happymmall.com/manage/product/detail.do',
             data: {
                 productId
             }
@@ -18,10 +18,10 @@ class Product {
             data = {};
 
         if (listParam.listType === 'list') {
-            url = '/manage/product/list.do';
+            url = 'http://admintest.happymmall.com/manage/product/list.do';
             data.pageNum = listParam.pageNum;
         } else if (listParam.listType === 'search') {
-            url = '/manage/product/search.do';
+            url = 'http://admintest.happymmall.com/manage/product/search.do';
             data.pageNum = listParam.pageNum;
             data[listParam.searchType] = listParam.searchKeyword;
         }
@@ -36,7 +36,7 @@ class Product {
     changeProductStatus(productInfo) {
         return _mm.request({
             type: 'post',
-            url: '/manage/product/set_sale_status.do',
+            url: 'http://admintest.happymmall.com/manage/product/set_sale_status.do',
             data: productInfo
         })
     }
@@ -47,7 +47,7 @@ class Product {
     getCategoryList(parentCategoryId) {
         return _mm.request({
             type: 'post',
-            url: '/manage/category/get_category.do',
+            url: 'http://admintest.happymmall.com/manage/category/get_category.do',
             data: {
                 categoryId: parentCategoryId || 0
             }
@@ -57,7 +57,7 @@ class Product {
      saveCategory(category) {
         return _mm.request({
             type: 'post',
-            url: '/manage/category/add_category.do',
+            url: 'http://admintest.happymmall.com/manage/category/add_category.do',
             data: category
         });
     }
@@ -65,7 +65,7 @@ class Product {
     updateCategoryName(category) {
         return _mm.request({
             type: 'post',
-            url: '/manage/category/set_category_name.do',
+            url: 'http://admintest.happymmall.com/manage/category/set_category_name.do',
             data: category
         });
     }
@@ -127,7 +127,7 @@ class Product {
         if (product.id) {
             return _mm.request({
                 type: 'post',
-                url: '/manage/product/save.do',
+                url: 'http://admintest.happymmall.com/manage/product/save.do',
                 data: {
                     name: product.productName,
                     subtitle: product.productDes,
@@ -143,7 +143,7 @@ class Product {
         }
         return _mm.request({
             type: 'post',
-            url: '/manage/product/save.do',
+            url: 'http://admintest.happymmall.com/manage/product/save.do',
             data: {
                 name: product.productName,
                 subtitle: product.productDes,
