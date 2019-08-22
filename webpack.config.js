@@ -9,7 +9,8 @@ module.exports = {
     entry: './src/app.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        publicPath: WEBPACK_ENV === 'dev' ? '/dist/' : '//hidden-oasis-31543.herokuapp.com/dist/',
+        //publicPath: WEBPACK_ENV === 'dev' ? '/dist/' : '//hidden-oasis-31543.herokuapp.com/dist/',
+        publicPath: '/dist/',
         filename: 'js/app.js'
     },
     resolve: {
