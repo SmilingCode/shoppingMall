@@ -3,13 +3,10 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
-//let WEBPACK_ENV = process.env.WEBPACK_ENV || 'dev';
-
 module.exports = {
     entry: './src/app.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        //publicPath: WEBPACK_ENV === 'dev' ? '/dist/' : '//hidden-oasis-31543.herokuapp.com/dist/',
         publicPath: '/dist/',
         filename: 'bundle.js'
     },
@@ -80,7 +77,7 @@ module.exports = {
         },
         proxy: {
             // key
-            '/manage': {
+            '/manage/*': {
                 target: 'http://admintest.happymmall.com/',
                 changeOrigin: true
             },

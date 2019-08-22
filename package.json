@@ -6,7 +6,7 @@
   "scripts": {
     "test": "webpack-dev-server --open",
     "watch": "webpack --watch",
-    "start": "webpack-dev-server && node server.js",
+    "start": "node server.js",
     "dev": "node_modules/.bin/webpack-dev-server",
     "build": "webpack",
     "heroku-postbuild": "webpack -p"
