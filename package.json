@@ -4,8 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "node_modules/.bin/webpack-dev-server",
-    "dist": "WEBPACK_ENV=online node_modules/.bin/webpack -p",
     "test": "webpack-dev-server --open",
     "watch": "webpack --watch",
     "start": "node server.js",

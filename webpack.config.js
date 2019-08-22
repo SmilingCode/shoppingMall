@@ -3,7 +3,7 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
-let WEBPACK_ENV = process.env.WEBPACK_ENV || 'dev';
+//let WEBPACK_ENV = process.env.WEBPACK_ENV || 'dev';
 
 module.exports = {
     entry: './src/app.js',
