@@ -74,6 +74,7 @@ module.exports = {
     },
     // webpack dev server
     devServer: {
+        host: 'http://admintest.happymmall.com/',
         port: 5000,
         historyApiFallback: {
             index: '/dist/index.html'
