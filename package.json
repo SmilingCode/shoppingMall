@@ -7,8 +7,7 @@
     "test": "webpack-dev-server --open",
     "watch": "webpack --watch",
     "start": "node server.js && ./node_modules/webpack/bin/webpack.js -p --progress",
-    "build": "webpack",
-    "heroku-postbuild": "webpack -p"
+    "build": "webpack -p"
   },
   "repository": {
     "type": "git",
