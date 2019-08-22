@@ -9,10 +9,10 @@ class Order {
             data = {};
 
         if (listParam.listType === 'list') {
-            url = 'http://admintest.happymmall.com/manage/order/list.do';
+            url = '/manage/order/list.do';
             data.pageNum = listParam.pageNum;
         } else if (listParam.listType === 'search') {
-            url = 'http://admintest.happymmall.com/manage/order/search.do';
+            url = '/manage/order/search.do';
             data.pageNum = listParam.pageNum;
             data.orderNo = listParam.orderNo;
         }
@@ -27,7 +27,7 @@ class Order {
     getOrderDetial(orderNumber) {
         return _mm.request({
             type: 'post',
-            url: 'http://admintest.happymmall.com/manage/order/detail.do',
+            url: '/manage/order/detail.do',
             data: {
                 orderNo: orderNumber
             }
@@ -37,7 +37,7 @@ class Order {
     sendGoods(orderNumber) {
         return _mm.request({
             type: 'post',
-            url: 'http://admintest.happymmall.com/manage/order/send_goods.do',
+            url: '/manage/order/send_goods.do',
             data: {
                 orderNo: orderNumber
             }

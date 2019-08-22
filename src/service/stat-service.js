@@ -6,7 +6,7 @@ class Stat {
     getHomeCount() {
         return _mm.request({
             //type: 'post',
-            url: 'http://admintest.happymmall.com/manage/statistic/base_count.do'
+            url: '/manage/statistic/base_count.do'
         });
     }
 }
