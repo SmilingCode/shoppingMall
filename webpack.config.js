@@ -74,7 +74,7 @@ module.exports = {
     },
     // webpack dev server
     devServer: {
-        port: 8087,
+        port: 5000,
         historyApiFallback: {
             index: '/dist/index.html'
         },
