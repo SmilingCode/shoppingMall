@@ -46,6 +46,7 @@
     "react-dom": "^16.2.0",
     "react-fileupload": "^2.4.0",
     "react-router-dom": "^5.0.1",
-    "simditor": "^2.3.6"
+    "simditor": "^2.3.6",
+    "express": "^4.16.2"
   }
 }
