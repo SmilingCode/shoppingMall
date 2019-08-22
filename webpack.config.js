@@ -72,25 +72,7 @@ module.exports = {
             }
         ]
     },
-    // webpack dev server
-    devServer: {
-        host: 'http://admintest.happymmall.com/',
-        port: 5000,
-        historyApiFallback: {
-            index: '/dist/index.html'
-        },
-        proxy: {
-            // key
-            '/manage': {
-                target: 'http://admintest.happymmall.com/',
-                changeOrigin: true
-            },
-            '/user/logout.do': {
-                target: 'http://admintest.happymmall.com/',
-                changeOrigin: true
-            }
-        }
-    },
+
     // specify files
     plugins: [
         new ExtractTextPlugin("css/[name].css"),
