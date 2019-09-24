@@ -12,7 +12,7 @@ This is a single page website structured with React, Router, Bootstrap, Sass and
 
 ## ScreenShots
 
-<p align="center"><img src="gym-app/public/screenshots/2-small.png"></p>
+<p align="center"><img src="screenshot/shoppingMall.png"></p>
 
 ## Deploy
 
