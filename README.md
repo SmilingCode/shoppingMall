@@ -4,7 +4,7 @@
 
 This is a back stage of a shopping mall website. Administrative staffs can check many informations which includes Commodity, Category, Order and User. Moreover, they are able to publish their commodities and control the status of the commodities. For example, administrator can give an order that the current commodity is selling or off-shelf by changing the button states. Also, administrator can notify couriers to deliver the commodity if which order status of the commodity changed to paid.
 
-**Website:** https://shopping-cms.herokuapp.com(To test the website, username: admin, password: admin)
+**Website:** https://shopping-cms.herokuapp.com (To test the website, username: admin, password: admin)
 
 ## Description
 
