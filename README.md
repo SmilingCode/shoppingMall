@@ -18,7 +18,7 @@ This is a single page website structured with React, Router, Bootstrap, Sass and
 
 Clone the application to your local directory first:
 ```javascript
-git clone 
+git clone https://github.com/SmilingCode/shoppingMall.git
 ```
 
 Install all necessary packages:
